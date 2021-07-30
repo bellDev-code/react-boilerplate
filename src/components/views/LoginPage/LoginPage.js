@@ -34,19 +34,19 @@ function LoginPage() {
   const onSubmitChange = (event) => {
     event.preventDefault();
 
-    console.log("Email", Email);
-    console.log("Password", Password);
+    // console.log("Email", Email);
+    // console.log("Password", Password);
+
+    // 서버에 넣을 데이터
+    // let body = {
+    //   email: Email,
+    //   password: Password,
+    // };
+
+    // axios.post("api/users/login", body) {
+    // 서버에서 포스트
+    // }
   };
-
-  // 서버에 넣을 데이터
-  // let body = {
-  //   email: Email,
-  //   password: Password,
-  // };
-
-  // axios.post("api/users/login", body) {
-  // 서버에서 포스트
-  // }
 
   return (
     <Container>
@@ -56,7 +56,7 @@ function LoginPage() {
         <label>password</label>
         <input type="password" value={Password} onChange={onPasswordChange} />
         <br />
-        <button type="submit">Login</button>
+        <button type="submit">로그인</button>
       </LoginForm>
     </Container>
   );
